@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">RecyclerView_Avengers</string>
+    <string name="app_name">RecyclerView</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="canada2">canada2</string>
 </resources>
