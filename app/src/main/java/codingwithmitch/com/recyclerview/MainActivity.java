@@ -1,7 +1,14 @@
 package codingwithmitch.com.recyclerview;
 
+import android.app.AlertDialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.support.annotation.Nullable;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +22,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -52,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: started.");
+
+
+
 
         initImageBitmaps();
         mDrawerLayout = findViewById(R.id.drawer_layout);
@@ -97,6 +109,12 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.mnuNew:
                 Toast.makeText(this, "New Profile!", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.mnuNew2:
+                showNotification();
+                return true;
+            case R.id.showdialog:
+                showdialog();
                 return true;
             case R.id.mnuOpen:
                 Toast.makeText(this, "UEFA Champions League!", Toast.LENGTH_SHORT).show();
@@ -152,10 +170,57 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
+    public void showNotification() {
+        Intent intent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.facebook.com/boy.reallife"));
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        Notification notification =
+                new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setContentTitle("Realxiz")
+                        .setContentText("Hello Notification !!")
+                        .setAutoCancel(true)
+                        .setContentIntent(pendingIntent)
+                        .build();
+
+        NotificationManager notificationManager =
+                (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.notify(1000, notification);
+    }
+
+    public void showdialog() {
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.dialog_login, null);
+        final EditText mEmail = (EditText) mView.findViewById(R.id.etEmail);
+        final EditText mPassword = (EditText) mView.findViewById(R.id.etPassword);
+        Button mLogin = (Button) mView.findViewById(R.id.btnLogin);
+        mBuilder.setView(mView);
+        final AlertDialog dialog = mBuilder.create();
+        dialog.show();
+        mLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!mEmail.getText ().toString ().isEmpty () && !mPassword.getText ().toString ().isEmpty ()) {
+                    Toast.makeText (MainActivity.this,
+                            R.string.success_login_msg,
+                            Toast.LENGTH_SHORT).show ();
+                    dialog.dismiss ();
+                } else {
+                    Toast.makeText (MainActivity.this,
+                            R.string.error_login_msg,
+                            Toast.LENGTH_SHORT).show ();
+                }
+            }
 
 
+        });
 
+    }
 }
+
+
+
 
 
 
