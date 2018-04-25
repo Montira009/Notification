@@ -130,33 +130,33 @@ public class MainActivity extends AppCompatActivity {
     private void initImageBitmaps(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
-        mImageUrls.add("https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/0/0f/24_Hours_Resurrection_Super_Saiyan_2_Goku_%28Angel%29.png/revision/latest?cb=20160825141919");
-        mNames.add("Goku");
+        mImageUrls.add("https://ae01.alicdn.com/kf/HTB1EA4YMFXXXXXxXFXXq6xXFXXX2/100-unids-flor-china-com-n-de-flores-rosas-rojas-semillas-jard-n-de-DIY-patio.jpg");
+        mNames.add("Rose");
 
-        mImageUrls.add("https://pre00.deviantart.net/0f1c/th/pre/i/2018/015/7/6/super_vegeta_ssj_blue_by_saodvd-dc044sk.png");
-        mNames.add("Vegeta");
+        mImageUrls.add("http://kaset-lifestyle.com/wp-content/uploads/2017/10/pink_lotus.jpg");
+        mNames.add("Lotus");
 
-        mImageUrls.add("https://pre00.deviantart.net/666e/th/pre/i/2017/332/4/1/la_wea_golden_freezer__v_by_fradayesmarkers-dbsmyca.png");
-        mNames.add("Freezer");
+        mImageUrls.add("http://www.ssimall.com/web/product/big/ssi33p9085_53.jpg");
+        mNames.add("Forget me not");
 
-        mImageUrls.add("https://pre00.deviantart.net/b9d8/th/pre/i/2018/049/2/6/numero_18_estilo_dicasty_by_dicasty1-dc3lfsd.jpg");
-        mNames.add("Android 18");
+        mImageUrls.add("https://cdn.pixabay.com/photo/2018/04/03/16/13/tulip-3287183_960_720.jpg");
+        mNames.add("Tulip");
 
-        mImageUrls.add("https://i.pinimg.com/originals/27/ac/3e/27ac3e5aa9c8b07d054c00946b9eb3a1.png");
-        mNames.add("Gohan");
+        mImageUrls.add("http://www.กล้วยไม้สาย4.com/index_files/3016s.jpg");
+        mNames.add("Orchid");
 
 
-        mImageUrls.add("https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/3/38/False_SSB_Trunks.jpg/revision/latest?cb=20161220052756");
-        mNames.add("Trunks");
+        mImageUrls.add("http://mossymairu.appspot.com/images/mali2.jpg");
+        mNames.add("Jasmine");
 
-        mImageUrls.add("https://i.pinimg.com/originals/30/bc/62/30bc62c430e7e79de8db84daa016487f.jpg");
-        mNames.add("Caulifla ");
+        mImageUrls.add("http://3.bp.blogspot.com/-lP-izIjLtSs/TfKvXbEeTcI/AAAAAAAAAlA/ltrU3AEQ2Eo/s1600/e0b8a5e0b8b1e0b988e0b899e0b897e0b8a1.jpg");
+        mNames.add("Plumeria");
 
-        mImageUrls.add("https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/3/3a/Card_1002400_bg.png/revision/latest?cb=20160907124733");
-        mNames.add("Gotenks");
+        mImageUrls.add("http://2.bp.blogspot.com/-WfpNhCgHOY4/UN7XT3ql5rI/AAAAAAAACaE/U6W_A6CSU3I/s1600/Sunflower7.bmp");
+        mNames.add("Sunflower");
 
-        mImageUrls.add("http://images6.fanpop.com/image/polls/1284000/1284712_1380361818904_full.png?v=1380361829");
-        mNames.add("Bills");
+        mImageUrls.add("https://i.pinimg.com/originals/a2/7f/3b/a27f3bd3deb8eab7bc3a22809061c027.jpg");
+        mNames.add("Spike flower");
 
 
 

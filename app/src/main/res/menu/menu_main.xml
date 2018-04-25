@@ -17,7 +17,7 @@
 
     <item
         android:id="@+id/btn_show_notification"
-        android:icon="@drawable/ic_trending_up_black_24dp"
+        android:icon="@drawable/ic_settings_black_24dp"
         app:showAsAction="ifRoom|withText"
         android:title="Contact" >
         <menu>

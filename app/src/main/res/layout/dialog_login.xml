@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Login"
+        android:text="ล็อคอิน"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:textAlignment="center"
         android:hint="username"
         android:inputType="text" />
 
@@ -31,7 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:ems="10"
-        android:textAlignment="center"
         android:hint="password"
         android:inputType="textPassword" />
 
@@ -40,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#000"
+        android:background="#cf71b5"
         android:text="login"
         android:textColor="@android:color/white" />
 </LinearLayout>
