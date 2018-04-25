@@ -3,7 +3,7 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#fffefe"
     android:weightSum="100">
 
     <ImageView
@@ -22,10 +22,10 @@
         android:id="@+id/image_description"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:background="#000"
+        android:background="#faf8f8"
         android:text="Canada"
         android:textSize="20sp"
-        android:textColor="#fff"
+        android:textColor="#000000"
         />
 
 </LinearLayout>

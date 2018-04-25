@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private  String [] mDrawerTitle = {"Home", "About", "Reference", "Detail","Log out"};
+    private  String [] mDrawerTitle = {"Main", "Open", "Note", "Content", "Social", "Album", "History", "Buy","References" , "log out-->"};
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private ListView mListView;
@@ -172,13 +172,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showNotification() {
         Intent intent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.facebook.com/boy.reallife"));
+                Uri.parse("https://github.com/Montira009"));
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
         Notification notification =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("Realxiz")
+                        .setContentTitle("Read Me")
                         .setContentText("Hello Notification !!")
                         .setAutoCancel(true)
                         .setContentIntent(pendingIntent)
